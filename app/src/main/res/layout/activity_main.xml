@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/wauw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:id="@+id/txtUSRN"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/tstPWS"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnLGN"
+            android:backgroundTint="#3F51B5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Login" />
+        <Button
+            android:id="@+id/btnRGR"
+            android:backgroundTint="#FF5722"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Register"/>
+    </LinearLayout>
+
+</LinearLayout>

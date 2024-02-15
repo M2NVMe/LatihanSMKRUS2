@@ -54,6 +54,7 @@ public class kalkulator extends AppCompatActivity {
                 //harus ada semacam penunjuk valueof(hsl), ga bisa langsung seperti java netbeans
                 hasil.setText(String.valueOf(hsl));
             }
+            //ini cuma test, moga gk ngebug
         });
     }
 }

@@ -1,12 +1,12 @@
 package com.example.latihan2.recycleview;
 
-public class items {
+public class itemsme {
 
     String name;
     String tipe;
     int img;
 
-    public items(String name, String tipe, int img) {
+    public itemsme(String name, String tipe, int img) {
         this.name = name;
         this.tipe = tipe;
         this.img = img;

@@ -2,14 +2,14 @@ package com.example.latihan2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.latihan2.recycleview.ListGame;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtuser;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (txtuser.getText().toString().equals(user) && txtpawos.getText().toString().equals(pw)) {
-                    Intent intent = new Intent(MainActivity.this, kalkulator.class) ;
+                    Intent intent = new Intent(MainActivity.this, ListGame.class) ;
                     startActivity(intent);
 
                 } else {

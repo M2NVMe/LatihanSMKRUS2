@@ -11,7 +11,7 @@ import com.example.latihan2.R;
 
 import java.util.List;
 
-public class adaptor extends RecyclerView.Adapter<viewholder> {
+public class adaptor extends RecyclerView.Adapter<vwhld> {
 
     Context konteks;
     List<itemsme> item;
@@ -23,12 +23,12 @@ public class adaptor extends RecyclerView.Adapter<viewholder> {
 
     @NonNull
     @Override
-    public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new viewholder(LayoutInflater.from(konteks).inflate(R.layout.item_recycl,parent,false));
+    public vwhld onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new vwhld(LayoutInflater.from(konteks).inflate(R.layout.item_recycl,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull vwhld holder, int position) {
         holder.nama.setText(item.get(position).getName());
         holder.tipe.setText(item.get(position).getTipe());
         holder.ImageVW.setImageResource(item.get(position).getImg());

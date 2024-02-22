@@ -9,12 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.latihan2.R;
 
-import org.w3c.dom.Text;
-
-public class viewholder extends RecyclerView.ViewHolder {
+public class vwhld extends RecyclerView.ViewHolder {
     ImageView ImageVW;
     TextView nama,tipe;
-    public viewholder(@NonNull View itemView) {
+    public vwhld(@NonNull View itemView) {
         super(itemView);
         ImageVW = itemView.findViewById(R.id.ImageVW);
         nama = itemView.findViewById(R.id.name);

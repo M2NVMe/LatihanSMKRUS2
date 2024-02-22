@@ -16,7 +16,7 @@ public class ListFood extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_game);
+        setContentView(R.layout.activity_list_makanan);
 
         RecyclerView recyclerView = findViewById(R.id.recycl);
         List<itemsme> Barang = new ArrayList<itemsme>();

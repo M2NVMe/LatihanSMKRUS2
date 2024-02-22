@@ -21,6 +21,8 @@ public class ListGame extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recycl);
         List<itemsme> Barang = new ArrayList<itemsme>();
         Barang.add(new itemsme("Derail Valley", "Simulation", R.drawable.wauw));
+        Barang.add(new itemsme("Gmod", "Sandbox", R.drawable.wauw));
+        Barang.add(new itemsme("HL2", "Adventure", R.drawable.wauw));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new adaptor(getApplicationContext(),Barang));

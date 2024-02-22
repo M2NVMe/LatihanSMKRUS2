@@ -6,9 +6,9 @@ public class itemsme {
     String tipe;
     int img;
 
-    public itemsme(String name, String tipe, int img) {
+    public itemsme(String name, String description, int img) {
         this.name = name;
-        this.tipe = tipe;
+        this.tipe = description;
         this.img = img;
     }
 

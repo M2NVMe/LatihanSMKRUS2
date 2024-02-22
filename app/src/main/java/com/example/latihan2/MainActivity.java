@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.latihan2.recycleview.ListGame;
+import com.example.latihan2.recycleview.ListFood;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtuser;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (txtuser.getText().toString().equals(user) && txtpawos.getText().toString().equals(pw)) {
-                    Intent intent = new Intent(MainActivity.this, ListGame.class) ;
+                    Intent intent = new Intent(MainActivity.this, ListFood.class) ;
                     startActivity(intent);
 
                 } else {

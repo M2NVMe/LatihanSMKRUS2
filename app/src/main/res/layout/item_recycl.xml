@@ -4,12 +4,15 @@
     android:layout_marginTop="6dp"
     android:layout_height="wrap_content">
     <ImageView
-        android:layout_height="48dp"
-        android:layout_width="48dp"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="12dp"
         android:layout_centerVertical="true"
         android:id="@+id/ImageVW"/>
     <TextView
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/name"
@@ -20,18 +23,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
         android:id="@+id/tipe"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:layout_toEndOf="@id/ImageVW"
         android:layout_below="@id/name"
         android:textColor="@color/black"
         android:text="tipe"/>
     
     <LinearLayout
-        android:layout_below="@id/ImageVW"
+        android:layout_below="@id/tipe"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:background="#6A6363"/>
 
 

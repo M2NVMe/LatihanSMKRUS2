@@ -25,6 +25,6 @@ public class ListFood extends AppCompatActivity {
        Barang.add(new itemsme("Pizza", " Piza[1] (bahasa Italia: pizza) adalah hidangan gurih asal Italia sejenis adonan bundar dan pipih, yang dipanggang di oven dan biasanya dilumuri saus tomat serta keju dengan bahan makanan tambahan lainnya yang bisa dipilih sesuai selera. Keju yang dipakai biasanya mozzarella atau keju piza, bisa juga parmesan dan beberapa jenis keju lainnya. ", R.drawable.piza));
        Barang.add(new itemsme("Lontong Tahu Telor", " Adalah Sebuah hidangan yang dimana lontong sebagai bagian utama hidangannya yang di temani oleh telur dan tahu, biasanya berasa manis dan di campuur dengan sambel kacang yang manis maupun pedas", R.drawable.tahutelor));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new adaptor(getApplicationContext(),Barang));
+        recyclerView.setAdapter(new Adaptor(getApplicationContext(),Barang));
     }
 }

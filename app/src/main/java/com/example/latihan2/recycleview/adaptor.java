@@ -38,4 +38,6 @@ public class adaptor extends RecyclerView.Adapter<vwhld> {
     public int getItemCount() {
         return item.size();
     }
+
+
 }

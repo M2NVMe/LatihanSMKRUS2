@@ -2,6 +2,7 @@ package com.example.latihan2.recycleview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -15,10 +16,12 @@ public class adaptor extends RecyclerView.Adapter<vwhld> {
 
     Context konteks;
     List<itemsme> item;
+    SelectListen selectListen;
 
-    public adaptor(Context konteks, List<itemsme> item) {
+    public adaptor(Context konteks, List<itemsme> item, SelectListen selectListen) {
         this.konteks = konteks;
         this.item = item;
+        this.selectListen = selectListen;
     }
 
     @NonNull
@@ -32,6 +35,12 @@ public class adaptor extends RecyclerView.Adapter<vwhld> {
         holder.nama.setText(item.get(position).getName());
         holder.tipe.setText(item.get(position).getTipe());
         holder.ImageVW.setImageResource(item.get(position).getImg());
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectListen.itemklik(item.get(position));
+            }
+        });
     }
 
     @Override

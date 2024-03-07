@@ -15,10 +15,10 @@ import java.util.List;
 public class adaptor extends RecyclerView.Adapter<vwhld> {
 
     Context konteks;
-    List<itemsme> item;
+    List<myItems> item;
     SelectListen selectListen;
 
-    public adaptor(Context konteks, List<itemsme> item, SelectListen selectListen) {
+    public adaptor(Context konteks, List<myItems> item, SelectListen selectListen) {
         this.konteks = konteks;
         this.item = item;
         this.selectListen = selectListen;

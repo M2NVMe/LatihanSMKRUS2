@@ -1,4 +1,4 @@
-package com.example.latihan2.frgsm;
+package com.example.latihan2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -10,6 +10,9 @@ import android.os.Bundle;
 import com.example.latihan2.R;
 import com.example.latihan2.databinding.ActivityMainConstraintBinding;
 import com.example.latihan2.databinding.ActivityMeunusBinding;
+import com.example.latihan2.frgsm.HomeFragment;
+import com.example.latihan2.frgsm.ProfileFragment;
+import com.example.latihan2.frgsm.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class meunus extends AppCompatActivity {

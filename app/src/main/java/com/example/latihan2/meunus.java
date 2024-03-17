@@ -6,8 +6,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-
-import com.example.latihan2.databinding.ActivityMainConstraintBinding;
 import com.example.latihan2.databinding.ActivityMeunusBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -17,8 +15,8 @@ public class meunus extends AppCompatActivity {
     ActivityMeunusBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        bottomNavigationView.findViewById(R.id.bottomNavigationView);
         super.onCreate(savedInstanceState);
+        bottomNavigationView.findViewById(R.id.bottomNavigationView);
         binding = ActivityMeunusBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());

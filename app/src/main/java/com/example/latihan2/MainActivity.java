@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.latihan2.recycleview.ListFood;
-
 public class MainActivity extends AppCompatActivity {
     EditText txtuser;
     EditText txtpawos;

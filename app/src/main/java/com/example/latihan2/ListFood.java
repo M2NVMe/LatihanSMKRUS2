@@ -1,4 +1,4 @@
-package com.example.latihan2.recycleview;
+package com.example.latihan2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,12 +8,15 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.latihan2.R;
+import com.example.latihan2.recycleview.SelectListen;
+import com.example.latihan2.recycleview.adaptor;
+import com.example.latihan2.recycleview.myItems;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ListFood extends AppCompatActivity implements SelectListen{
+public class ListFood extends AppCompatActivity implements SelectListen {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

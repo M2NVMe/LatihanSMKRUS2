@@ -16,7 +16,6 @@ public class meunus extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bottomNavigationView.findViewById(R.id.bottomNavigationView);
         binding = ActivityMeunusBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());

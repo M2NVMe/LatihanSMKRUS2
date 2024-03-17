@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (txtuser.getText().toString().equals(user) && txtpawos.getText().toString().equals(pw)) {
-                    Intent intent = new Intent(MainActivity.this, ListFood.class) ;
+                    Intent intent = new Intent(MainActivity.this, meunus.class) ;
                     startActivity(intent);
 
                 } else {

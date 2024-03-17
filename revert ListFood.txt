@@ -12,9 +12,9 @@ import android.widget.Toast;
 
 import com.example.latihan2.R;
 import com.example.latihan2.databinding.ActivityMeunusBinding;
-import com.example.latihan2.frgsm.HomeFragment;
-import com.example.latihan2.frgsm.ProfileFragment;
-import com.example.latihan2.frgsm.SettingsFragment;
+import com.example.latihan2.HomeFragment;
+import com.example.latihan2.ProfileFragment;
+import com.example.latihan2.SettingsFragment;
 import com.example.latihan2.recycleview.SelectListen;
 import com.example.latihan2.recycleview.adaptor;
 import com.example.latihan2.recycleview.myItems;

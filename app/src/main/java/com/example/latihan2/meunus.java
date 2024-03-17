@@ -7,12 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.example.latihan2.R;
 import com.example.latihan2.databinding.ActivityMainConstraintBinding;
 import com.example.latihan2.databinding.ActivityMeunusBinding;
-import com.example.latihan2.frgsm.HomeFragment;
-import com.example.latihan2.frgsm.ProfileFragment;
-import com.example.latihan2.frgsm.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class meunus extends AppCompatActivity {
@@ -27,17 +23,16 @@ public class meunus extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
         binding.bottomNavigationView.setOnItemReselectedListener(item -> {
-            switch (item.getItemId()){
-                case R.id.home:
-                    replaceFragment(new HomeFragment());
-                    break;
-                case R.id.profile:
-                    replaceFragment(new ProfileFragment());
-                    break;
-                case R.id.settings:
-                    replaceFragment(new SettingsFragment());
-                    break;
+            int itemId = item.getItemId();
+            if (itemId == R.id.home) {
+                replaceFragment(new HomeFragment());
+            } else if (itemId == R.id.profile) {
+                replaceFragment(new ProfileFragment());
+            } else if (itemId == R.id.settings) {
+                replaceFragment(new SettingsFragment());
             }
+
+
         });
     }
     private void replaceFragment(Fragment fragment) {

@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Latihan2"
         tools:targetApi="31">
         <activity
-            android:name=".meunus"
+            android:name=".frgsm.meunus"
             android:exported="false" />
         <activity
             android:name=".Fragmentasi"

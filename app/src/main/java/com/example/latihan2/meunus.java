@@ -10,7 +10,6 @@ import com.example.latihan2.databinding.ActivityMeunusBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class meunus extends AppCompatActivity {
-    BottomNavigationView bottomNavigationView;
 
     ActivityMeunusBinding binding;
     @Override
